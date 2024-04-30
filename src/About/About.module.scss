@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.about {
+  font-family: "Open Sans", sans-serif;
+  margin: 80px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    width: 50vw;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: rgb(244, 201, 180);
+  }
+}
+
+.skills {
+  &__list {
+    list-style: none;
+    margin: 20px;
+    gap: 15px;
+    text-align: end;
+  }
+
+  &__listItem {
+    margin: 15px;
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+}

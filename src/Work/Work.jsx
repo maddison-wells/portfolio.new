@@ -35,7 +35,7 @@ const Work = () => {
           title="Google Books Search Engine"
           img={google1}
           description="A ReactJS search engine powered by the Google Books API, offering a platform to explore and discover books online with detailed information fetched directly from the API."
-          link="https://github.com/maddison-wells/google-books"
+          link="https://mw-google-books-search.netlify.app/"
           backgroundColor="rgb(244,201,180)"
         />
         <Card

@@ -7,6 +7,7 @@ import snake from "../assets/snake.png";
 import lego1 from "../assets/lego-store.png";
 import Masonry from "react-masonry-css";
 import todo from "../assets/to-do.png";
+import recipeimg from "../assets/madsrecipe.png";
 
 const Work = () => {
   return (
@@ -16,6 +17,13 @@ const Work = () => {
         className={styles.grid}
         columnClassName={styles.grid_column}
       >
+        <Card
+          title="Personal Recipe Journal"
+          img={recipeimg}
+          description="First true passion project I've built! An online recipe journal that has a ReactJS frontend and Java/Springboot backend. User can add, favourite and update content"
+          link="https://github.com/maddison-wells/recipebook"
+          backgroundColor="rgb(201,175,187)"
+        />
         <Card
           title="FakeOS"
           img={fakeOs}

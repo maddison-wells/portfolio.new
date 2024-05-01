@@ -21,6 +21,10 @@
     text-decoration: none;
     color: black;
   }
+
+  &__link:hover {
+    font-weight: bold;
+  }
 }
 
 @media screen and (max-width: 1154px) {

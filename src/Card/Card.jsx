@@ -10,8 +10,8 @@ const Card = ({ title, img, link, description, backgroundColor }) => {
     <div className={styles.card} style={cardStyle}>
       <img className={styles.card__img} src={img} alt={title} />
       <h2>{title}</h2>
-      <a className={styles.card__link} href={link}>
-        View
+      <a className={styles.card__link} href={link} target="_blank">
+        View Project
       </a>
       <p>{description}</p>
     </div>

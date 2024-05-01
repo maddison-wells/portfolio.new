@@ -21,7 +21,7 @@ const Navbar = () => {
           <img className={styles.nav__image} src={logo} alt="Logo" />
         </Link>
         <p className={styles.nav__location}>
-          Maddison Wells <br></br>Dharug Country(Sydney)
+          Maddison Wells <br></br>Dharug Nation(Sydney)
         </p>
       </div>
       <ul className={styles.nav__panel}>

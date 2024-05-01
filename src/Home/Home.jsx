@@ -13,7 +13,7 @@ const Home = () => {
       </p>
       <p>
         I'm a <span>Junior Full-Stack Developer</span> from <br />
-        Dharug Country | Sydney
+        Dharug Nation | Sydney
       </p>
 
       {/* <div className={styles.background}></div> */}

@@ -33,3 +33,21 @@
     color: rgb(244, 201, 180);
   }
 }
+
+@media screen and (max-width: 1096px) {
+  .about {
+    flex-direction: column-reverse;
+
+    &__text {
+      width: 80vw;
+      text-align: justify;
+    }
+  }
+
+  .skills {
+    &__listItem {
+      text-align: center;
+      flex-basis: 50%;
+    }
+  }
+}

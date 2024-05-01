@@ -59,3 +59,11 @@
     width: 30px;
   }
 }
+
+@media screen and (max-width: 736px) {
+  .nav {
+    &__socials {
+      display: none;
+    }
+  }
+}

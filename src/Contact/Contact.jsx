@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
 import styles from "./Contact.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faCopy } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
+  const [iconClicked, setIconClicked] = useState(false);
+
+  const handleCopyEmail = () => {
+    const email = "maddison.wells90@gmail.com";
+    navigator.clipboard.writeText(email);
+    setIconClicked(true);
+  };
+
   return (
     <div className={styles.contact}>
-      <div className={styles.contact__section}>
+      <div>
         <h1 className={styles.contact__title}>Let's work together.</h1>
         <p className={styles.contact__text}>
           As a junior full-stack developer, I'm enthusiastic about learning and
@@ -14,8 +24,16 @@ const Contact = () => {
         </p>
       </div>
       <div className={styles.contact__section}>
+        <button
+          className={`${styles.contact__btn} ${
+            iconClicked ? styles.clicked : ""
+          }`}
+          onClick={handleCopyEmail}
+        >
+          <FontAwesomeIcon icon={faCopy} />
+        </button>
         <ul className={styles.contact__list}>
-          <li>
+          <li className={styles.contact__listItem}>
             <p>Email me</p>
             <h4>maddison.wells90@gmail.com</h4>
           </li>
@@ -42,5 +60,7 @@ const Contact = () => {
     </div>
   );
 };
+
+ReactDOM.render(<Contact />, document.getElementById("root"));
 
 export default Contact;

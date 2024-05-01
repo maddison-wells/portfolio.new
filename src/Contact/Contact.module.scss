@@ -21,10 +21,19 @@
     list-style: none;
     font-size: 30px;
     color: black;
-    padding: 30px;
+    margin-top: 0px;
+  }
+
+  &__section {
+    padding-right: 30px;
+    padding-top: 30px;
+    position: relative;
     border-radius: 30px;
     background-color: rgb(244, 201, 180);
     width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   &__socials {
@@ -35,5 +44,51 @@
 
   &__socials:hover {
     color: rgb(201, 175, 187);
+  }
+
+  &__btn {
+    background: transparent;
+    font-size: 30px;
+    color: white;
+    border: none;
+    text-align: right;
+    margin-bottom: 0px;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+  }
+
+  &__btn.clicked {
+    color: black;
+  }
+
+  &__listItem {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 1096px) {
+  .contact {
+    flex-direction: column;
+    gap: 30px;
+
+    &__text {
+      width: 70vw;
+    }
+  }
+}
+
+@media screen and (max-width: 705px) {
+  .contact {
+    flex-direction: column;
+    gap: 30px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      width: 70vw;
+    }
   }
 }

@@ -25,7 +25,8 @@ const About = () => {
       <p className={styles.about__text}>
         Hello there! I'm <span>Maddison</span>, coming from a background in
         finance, the idea of transitioning into a field full of learning,
-        creativity, and innovation was too good to pass up. As a
+        creativity, and innovation was too good to pass up. I've spent the last
+        6 months working at _nology and found as a
         <span> junior full-stack developer</span>, I've thrived on challenging
         myself to learn new concepts and languages. I love to dabble in art when
         time permits, and I'm never far from a good book. If you're seeking a

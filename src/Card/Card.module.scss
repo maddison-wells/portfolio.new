@@ -22,3 +22,11 @@
     color: black;
   }
 }
+
+@media screen and (max-width: 1154px) {
+  .card {
+    &__img {
+      width: 200px;
+    }
+  }
+}

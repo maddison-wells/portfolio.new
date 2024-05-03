@@ -16,12 +16,12 @@ const Navbar = () => {
 
   return (
     <div className={styles.nav}>
-      <div>
+      <div className={styles.nav__details}>
         <Link to="/">
           <img className={styles.nav__image} src={logo} alt="Logo" />
         </Link>
         <p className={styles.nav__location}>
-          Maddison Wells <br></br>Dharug Nation(Sydney)
+          Maddison Wells <br></br>Dharug Nation | Sydney
         </p>
       </div>
       <ul className={styles.nav__panel}>

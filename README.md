@@ -4,6 +4,10 @@ Deployed site: https://maddison-wells.netlify.app/
 
 ## Activity Log
 
+### Thursday 2nd May
+
+Added the illustration to the home and worked on responsiviness
+
 ### Wednesday 1st May
 
 Added a clipboard function so that my email address on the contacts page would be added to the users clipboard for ease of use. I personally don't like when you click on an email and it redirects you to a blank email.

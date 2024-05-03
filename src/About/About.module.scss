@@ -3,6 +3,7 @@
 .about {
   font-family: "Open Sans", sans-serif;
   margin: 80px;
+  margin-top: 0px;
   font-size: 30px;
   display: flex;
   justify-content: space-between;
@@ -13,6 +14,7 @@
     padding: 30px;
     border-radius: 30px;
     background-color: rgb(244, 201, 180);
+    text-align: justify;
   }
 }
 
@@ -40,7 +42,7 @@
 
     &__text {
       width: 80vw;
-      text-align: justify;
+      text-align: left;
     }
   }
 

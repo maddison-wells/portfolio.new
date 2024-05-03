@@ -29,7 +29,7 @@
     padding-top: 30px;
     position: relative;
     border-radius: 30px;
-    background-color: rgb(244, 201, 180);
+    background-color: rgb(201, 175, 187);
     width: fit-content;
     display: flex;
     flex-direction: column;
@@ -83,12 +83,16 @@
   .contact {
     flex-direction: column;
     gap: 30px;
-    margin: 10px;
+    margin: 30px;
     justify-content: center;
     align-items: center;
 
     &__text {
       width: 70vw;
+    }
+
+    &__section {
+      margin: 10px;
     }
   }
 }

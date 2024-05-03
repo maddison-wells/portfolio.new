@@ -3,11 +3,12 @@
 .home {
   font-family: "Open Sans", sans-serif;
   font-weight: 200;
-  margin: 80px;
+  margin: 100px;
   font-size: 20px;
   display: flex;
   position: relative;
   z-index: 1000;
+  flex-wrap: wrap;
 
   flex-direction: column;
 
@@ -15,13 +16,38 @@
     font-size: 70px;
     margin-bottom: 0px;
   }
+
+  &__img {
+    width: 40vw;
+    position: absolute;
+    right: 70px;
+    top: -90px;
+  }
 }
 
 .background {
-  width: 60vw;
-  padding: 30px;
-  border-radius: 30px;
-  background-color: rgb(244, 201, 180);
+  position: absolute;
+  right: 70px;
+  top: 80px;
+  z-index: -1;
+  height: 250px;
+  width: 50vw;
+  background-color: transparent;
+  background-image: linear-gradient(
+    45deg,
+    rgb(170, 220, 236) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgb(170, 220, 236) 50%,
+    rgb(170, 220, 236) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 8px 8px;
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-origin: content-box;
+  background-clip: content-box;
 }
 
 span {

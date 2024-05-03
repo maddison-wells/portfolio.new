@@ -10,6 +10,7 @@ import {
   faReact,
   faAws,
   faGoogle,
+  faPython,
 } from "@fortawesome/free-brands-svg-icons";
 
 import {
@@ -38,6 +39,10 @@ const About = () => {
         <li className={styles.skills__listItem}>
           <FontAwesomeIcon className={styles.skills__icon} icon={faHtml5} />
           <span>HTML5</span>
+        </li>
+        <li className={styles.skills__listItem}>
+          <FontAwesomeIcon className={styles.skills__icon} icon={faPython} />
+          <span>Python</span>
         </li>
         <li className={styles.skills__listItem}>
           <FontAwesomeIcon className={styles.skills__icon} icon={faCss3Alt} />

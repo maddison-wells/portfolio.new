@@ -84,7 +84,7 @@
     flex-direction: column;
     gap: 30px;
     margin: 30px;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 
     &__text {
@@ -92,7 +92,8 @@
     }
 
     &__section {
-      margin: 10px;
+      width: 100vw;
+      border-radius: 0px;
     }
   }
 }

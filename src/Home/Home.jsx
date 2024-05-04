@@ -8,16 +8,18 @@ import me from "../assets/me-bgwhite.png";
 const Home = () => {
   return (
     <div className={styles.home}>
-      <p className={styles.home__title}>
-        Hi, my <br />
-        name is <span>Maddison</span>
-      </p>
-      <p>
-        I'm a <span>Junior Full-Stack Developer</span> from <br />
-        Dharug Nation | Sydney
-      </p>
-      <img className={styles.home__img} src={me}></img>
-      <div className={styles.background}></div>
+      <div className={styles.home__info}>
+        <p className={styles.home__title}>
+          Hi, my <br />
+          name is <span>Maddison</span>
+        </p>
+        <p>
+          I'm a <span>Junior Full-Stack Developer</span> from <br />
+          Dharug Nation | Sydney
+        </p>
+        <img className={styles.home__img} src={me}></img>
+        <div className={styles.background}></div>
+      </div>
 
       <Link to="/work" className={styles.link}>
         <p className={styles.home__title}>

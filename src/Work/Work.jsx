@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Card from "../Card/Card";
 import styles from "./Work.module.scss";
 import fakeOs from "../assets/fakeOS.png";
@@ -10,10 +10,30 @@ import todo from "../assets/to-do.png";
 import recipeimg from "../assets/madsrecipe.png";
 
 const Work = () => {
+  const [breakpointCols, setBreakpointCols] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 850) {
+        setBreakpointCols(2);
+      } else {
+        setBreakpointCols(3);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize); // Cleanup function to remove event listener
+    };
+  }, []);
+
   return (
     <div className={styles.work}>
       <Masonry
-        breakpointCols={3}
+        breakpointCols={breakpointCols}
         className={styles.grid}
         columnClassName={styles.grid_column}
       >
@@ -46,6 +66,7 @@ const Work = () => {
           link="https://mw-google-books-search.netlify.app/"
           backgroundColor="rgb(244,201,180)"
         />
+
         <Card
           title="Classic Snake Game"
           img={snake}

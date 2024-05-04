@@ -1,6 +1,4 @@
 .grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: -30px;
   width: auto;
@@ -11,14 +9,7 @@
 }
 
 @media screen and (max-width: 850px) {
-  .grid {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   .grid_column {
-    width: calc(50% - 5px);
-    margin-left: 10px;
-    margin-bottom: 30px;
+    padding-left: 20px;
   }
 }

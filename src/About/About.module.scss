@@ -32,13 +32,14 @@
 
   &__icon {
     margin-right: 10px;
-    color: rgb(244, 201, 180);
+    color: rgb(247, 191, 162);
   }
 }
 
 @media screen and (max-width: 1096px) {
   .about {
     flex-direction: column-reverse;
+    margin: auto;
 
     &__text {
       width: 80vw;
@@ -49,7 +50,14 @@
   .skills {
     &__listItem {
       text-align: center;
-      flex-basis: 50%;
+      // flex-basis: 50%;
+      width: fit-content;
+      margin: 0px;
     }
+  }
+}
+@media screen and (max-width: 558px) {
+  .about {
+    margin-top: 50px;
   }
 }

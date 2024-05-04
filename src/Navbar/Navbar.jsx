@@ -45,6 +45,27 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
+        <li className={styles.nav__items}>
+          <a
+            className={styles.nav__itemsSocials}
+            href="https://www.linkedin.com/in/maddison-wells-79895a102/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+        </li>
+        <li className={styles.nav__items}>
+          {" "}
+          <a
+            className={styles.nav__itemsSocials}
+            href="https://github.com/maddison-wells"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+        </li>
       </ul>
       <div>
         <a

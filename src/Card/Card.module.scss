@@ -2,7 +2,6 @@
 
 .card {
   border-radius: 30px;
-  width: fit-content;
   background-color: antiquewhite;
   margin: 20px;
   display: flex;
@@ -14,7 +13,7 @@
   height: fit-content;
 
   &__img {
-    width: 300px;
+    max-width: 300px;
   }
 
   &__link {
@@ -35,10 +34,10 @@
   }
 }
 
-@media screen and (max-width: 850px) {
-  .card {
-    &__img {
-      width: 300px;
-    }
-  }
-}
+// @media screen and (max-width: 850px) {
+//   .card {
+//     &__img {
+//       width: 300px;
+//     }
+//   }
+// }

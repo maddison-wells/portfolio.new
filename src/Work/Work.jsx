@@ -14,7 +14,9 @@ const Work = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 850) {
+      if (window.innerWidth < 540) {
+        setBreakpointCols(1);
+      } else if (window.innerWidth < 850) {
         setBreakpointCols(2);
       } else {
         setBreakpointCols(3);
@@ -26,7 +28,7 @@ const Work = () => {
     window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize); // Cleanup function to remove event listener
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -75,8 +77,7 @@ const Work = () => {
           backgroundColor="rgb(217, 112, 74)"
         />
         <Card
-          title="Lego E-Commerce Store
-"
+          title="Lego E-Commerce Store"
           img={lego1}
           description="Built with React JS, this e-commerce platform offers product browsing, searching, and cart functionality. Fetching information directly from Firestore."
           link="https://github.com/maddison-wells/legostore"

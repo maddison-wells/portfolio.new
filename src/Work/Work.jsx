@@ -14,7 +14,7 @@ const Work = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 540) {
+      if (window.innerWidth < 545) {
         setBreakpointCols(1);
       } else if (window.innerWidth < 850) {
         setBreakpointCols(2);

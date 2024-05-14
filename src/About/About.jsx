@@ -82,7 +82,7 @@ const About = () => {
         </li>
         <li className={styles.skills__listItem}>
           <FontAwesomeIcon className={styles.skills__icon} icon={faGoogle} />
-          <span>FireBase & FireStore</span>
+          <span>FireBase</span>
         </li>
         <li className={styles.skills__listItem}>
           <FontAwesomeIcon className={styles.skills__icon} icon={faComputer} />

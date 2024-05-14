@@ -35,7 +35,9 @@ const Contact = () => {
         <ul className={styles.contact__list}>
           <li className={styles.contact__listItem}>
             <p>Email me</p>
-            <h4>maddison.wells90@gmail.com</h4>
+            <h4 className={styles.contact__email}>
+              maddison.wells90@gmail.com
+            </h4>
           </li>
           {/* <li>
             <p>Socials</p>

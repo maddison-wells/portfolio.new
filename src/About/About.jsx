@@ -36,6 +36,7 @@ const About = () => {
       </p>
 
       <ul className={styles.skills__list}>
+        <h1 className={styles.skills__title}>Skills.</h1>
         <li className={styles.skills__listItem}>
           <FontAwesomeIcon className={styles.skills__icon} icon={faHtml5} />
           <span>HTML5</span>

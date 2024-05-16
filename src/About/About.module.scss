@@ -36,10 +36,7 @@
   }
 
   &__title {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 100;
-    text-align: start;
-    font-size: 140px;
+    display: none;
   }
 }
 
@@ -61,6 +58,14 @@
       // flex-basis: 50%;
       width: fit-content;
       margin: 0px;
+    }
+    &__title {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 100;
+      text-align: start;
+      font-size: 140px;
+      display: block;
+      margin-bottom: 30px;
     }
   }
 }
